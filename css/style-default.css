@@ -1,0 +1,133 @@
+:root {
+   --white: #ffffff;
+   --black: #000;
+   --font-color-base: #696969;
+   --font-color-dark: #212529;
+   --font-color-light: #b0aebe;
+   --font-color-link: #57a6ff;
+   --footer: #34314b;
+   --footer-base: #2e2b45;
+   --contrast: rgba(246,248,249,0.8);
+   --success: #64ecf5;
+   --danger: #ff8b8d;
+   --gradient-1:#a1ecff;
+   --gradient-2: #7dbcff;
+   --li-hover:#c4c4c4;
+
+   --size-10px: 0.625rem;
+   --size-14px: 0.875rem;
+   --size-16px: 1rem;
+   --size-18px: 1.125rem;
+   --size-20px: 1.25rem;
+   --size-30px: 1.875rem;
+   --size-40px: 2.5rem;
+   --size-50px: 3.125rem;
+   --size-100px: 6.25rem;
+   --size-150px: 9.375rem;
+}
+
+html { scroll-behavior: smooth;}
+
+body {
+   font-family: "Open Sans", sans-serif;
+   font-weight: 400;
+   font-size: 0.875rem;
+   line-height: 1.6;
+   letter-spacing: 0;
+   color: var(--font-color-base);
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;
+}
+
+*,
+::after
+::before {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a { text-decoration: none; }
+
+p { margin-top: 0; }
+
+h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.container {
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container2 {
+  display: flex;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bg-header {
+  background-color: var(--footer);
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: var(--font-color-dark);
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.475rem 1.75rem;
+  border-radius: 1.25rem;
+  transition: ease-in-out 0.3s;
+}
+
+.btn-gradient {
+  background-image: linear-gradient(90deg,var(--gradient-1) 0%, var(--gradient-2) 100%);
+  color: var(--white);
+  border: 1px solid var(--gradient-1);
+  box-shadow: 0px 10px 20px rgba(161,236,255,0.5);
+  transition: ease-in-out 0.3s;
+}
+
+.btn-white {
+  background-color: var(--white);
+  color: var(--font-color-link);
+  box-shadow: 0px 10px 20px rgba(255,255,255,0.35);
+}
+
+
+@media (min-width: 768px) {
+  .pricing-table,
+  .testimonial-grid, 
+  .footer-bottom-wrapper { max-width:720px;}
+}
+
+@media (min-width: 992px) {
+  footer .container { max-width: 960px;}
+}
+
+@media (min-width: 1200px) {
+  .container { max-width: 1140px;}
+}
